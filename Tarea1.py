@@ -63,7 +63,7 @@ T4 = np.arange(0,2*np.pi,0.001)
 SerieDeFourier(lista4,K4,T4)
 plt.subplot(2,3,2)
 plt.plot(T4,lista4,'C1')
-
+plt.legend(('k = 30','k = 40', 'k = 80', 'k = 160'))
 
 
 
