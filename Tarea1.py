@@ -111,11 +111,12 @@ T7 = np.arange(0,2*np.pi,0.001)
 
 SerieDeFourierPromedio(lista5,K,T)
 plt.subplot(3,1,3)
-plt.plot(T5,lista5,'C6')
+plt.plot(T7,lista7,'C11')
 
 
 
-plt.subplot_tool()
+
+plt.subplot_tool() # Esto abre una ventana para poder visualizar mejor los graficos, puedes ajustarlos como quieras.
 #######################################################################################
 
 plt.show()
