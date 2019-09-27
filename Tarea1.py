@@ -30,6 +30,7 @@ plt.plot(T,lista,'r')
 #######################################################################################
 # Parte B
 
+print("Ak = 0,616667*j/k")
 #######################################################################################
 #######################################################################################
 # Parte C
@@ -112,7 +113,14 @@ plt.subplot(1,3,3)
 plt.plot(T7,lista7,'C11')
 
 # Nos podemos dar cuenta que al graficar los promedios, dan los mismos valores, por lo que se sobreponen las funciones y no se puede ver dos de las tres,
-# EN otras palabras, los valores dan lo mismo en las 3 funciones a pesar de el K elegido.
+# EN otras palabras, los valores dan lo mismo en las 3 funciones a pesar de el K elegido. 
+# Por lo tanto el error es igual a 0.
+
+
+
+
+
+
 
 
 
