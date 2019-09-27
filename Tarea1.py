@@ -24,16 +24,19 @@ K = np.arange(1,30,1)
 T = np.arange(0,2*np.pi,0.001)
 SerieDeFourier(lista,K,T)
 plt.subplot(3,1,1)
+plt.title("Pregunta 1A")
 plt.plot(T,lista,'r')
 
 #######################################################################################
 # Parte B
+
 #######################################################################################
 #######################################################################################
 # Parte C
 
 
 plt.subplot(3,1,2)
+plt.title("Pregunta 1C")
 plt.plot(T,lista,'r')
 
 lista2 =[]
@@ -60,13 +63,18 @@ plt.plot(T4,lista4,'C1')
 
 
 
-M_Lista1 = np.max(lista)
+M_Lista = np.max(lista)
 M_Lista2 = np.max(lista2)
 M_Lista3 = np.max(lista3)
 M_Lista4 = np.max(lista4)
 
+PError1 = M_Lista2 - M_Lista
+PError2 = M_Lista3 - M_Lista
+PError3 = M_Lista4 - M_Lista
 
-print("Errores")
+print("Error")
+print("El error más grande es de :",PError3)
+
 
 
 #######################################################################################
@@ -81,15 +89,33 @@ def SerieDeFourierPromedio (lista,K,T):
 
 
 
-
 lista5 =[]
-K5 = np.arange(1,500,1)
+K5 = np.arange(1,40,1)
 T5 = np.arange(0,2*np.pi,0.001)
 
 SerieDeFourierPromedio(lista5,K,T)
 plt.subplot(3,1,3)
 plt.plot(T5,lista5,'C6')
 
+lista6 =[]
+K6 = np.arange(1,80,1)
+T6 = np.arange(0,2*np.pi,0.001)
+
+SerieDeFourierPromedio(lista6,K,T)
+plt.subplot(3,1,3)
+plt.plot(T6,lista6,'C9')
+
+lista7 =[]
+K7 = np.arange(1,160,1)
+T7 = np.arange(0,2*np.pi,0.001)
+
+SerieDeFourierPromedio(lista5,K,T)
+plt.subplot(3,1,3)
+plt.plot(T5,lista5,'C6')
+
+
+
+plt.subplot_tool()
 #######################################################################################
 
 plt.show()
