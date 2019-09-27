@@ -109,7 +109,7 @@ lista7 =[]
 K7 = np.arange(1,160,1)
 T7 = np.arange(0,2*np.pi,0.001)
 
-SerieDeFourierPromedio(lista5,K,T)
+SerieDeFourierPromedio(lista7,K,T)
 plt.subplot(3,1,3)
 plt.plot(T7,lista7,'C11')
 
